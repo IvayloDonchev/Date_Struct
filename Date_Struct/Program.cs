@@ -30,6 +30,9 @@ namespace Date_Struct
             date--;
             Console.WriteLine(date);
 
+            var (d, m, s) = date; // деконструкция
+            Console.WriteLine($"{d}.{m}.{s}");
+
             Console.ReadKey();
         }
     }
