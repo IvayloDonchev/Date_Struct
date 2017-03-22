@@ -31,7 +31,7 @@ namespace Date_Struct
             Console.WriteLine(date);
 
             var (d, m, s) = date; // деконструкция
-            Console.WriteLine($"{d}.{m}.{s}");
+            Console.WriteLine($"{d.ToString("D2")}.{m.ToString("D2")}.{s}");
 
             Console.ReadKey();
         }
