@@ -32,6 +32,11 @@ namespace Date_Struct
 
             var (d, m, s) = date; // деконструкция
             Console.WriteLine($"{d.ToString("D2")}.{m.ToString("D2")}.{s}");
+            Console.WriteLine("---------------------------------------");
+            Date d1 = new Date(13, 4, 2019);
+            Date d2 = d1;
+            
+            Console.WriteLine($"d1: {d1}\nd2: {d2}");
 
             Console.ReadKey();
         }

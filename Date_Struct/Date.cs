@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Date_Struct
 {
-    struct Date
+    public struct Date
     {
         static int[] days = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
         private int day, month, year;
@@ -49,7 +49,6 @@ namespace Date_Struct
                 tmp.day = days[--tmp.month];
                 if (tmp.month == 2 && LeapYear(year))
                     tmp.day = 29;
-
             }
             else --tmp.day;
             return tmp;
