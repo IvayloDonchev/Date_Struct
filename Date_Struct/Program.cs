@@ -35,7 +35,7 @@ namespace Date_Struct
             Console.WriteLine("---------------------------------------");
             Date d1 = new Date(13, 4, 2019);
             Date d2 = d1;
-            
+            d1 = new Date(1, 1, 2020);
             Console.WriteLine($"d1: {d1}\nd2: {d2}");
 
             Console.ReadKey();
