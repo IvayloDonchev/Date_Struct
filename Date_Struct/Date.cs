@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Date_Struct
+﻿namespace Date_Struct
 {
     public struct Date
     {
@@ -75,11 +69,6 @@ namespace Date_Struct
         public override string ToString() => day.ToString("D2") + "." + month.ToString("D2") + "." + year.ToString("D4");
         public static Date operator ++(Date date) => date.Tomorrow();
         public static Date operator --(Date date) => date.Yesterday();
-        public void Deconstruct(out int d, out int m, out int y)
-        {
-            d = day;
-            m = month;
-            y = year;
-        }
+        public void Deconstruct(out int d, out int m, out int y) => (d, m, y) = (day, month, year);
     }
 }
